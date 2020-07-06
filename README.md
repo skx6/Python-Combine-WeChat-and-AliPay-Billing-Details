@@ -18,5 +18,7 @@ rules_list是合并规则，正常情况下不用动了，除了你有特殊的�
 
 只要你可以成功地把程序运行起来，就可以生成合并后的账单，且按照时间排好了顺序，如图所示。
 
+![一些结果图](https://github.com/SongKaixiang/Python-Combine-WeChat-and-AliPay-Billing-Details/blob/master/merge/bill.jpg)
+
 有一些注意事项在脚本开头，读者可以自行查看。
 

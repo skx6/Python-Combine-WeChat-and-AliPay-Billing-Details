@@ -1,3 +1,10 @@
+# -- coding: utf-8 -- 
+# @Author:  Kaixiang Song
+# @Project: 数据结构与算法 
+# @File:    combine_wx_zfb.py
+# @Time:    2020/7/6 13:51 
+
+
 import pandas as pd
 from helper import print_data_info, get_data, update_data_types
 
@@ -87,10 +94,13 @@ def merge(path_wx, path_zfb, rules_list, save_path, start='2020/6/1 0:0:0', end=
     data = pd.concat([data_wx, data_zfb], axis=0, sort=False)       # 合并
     data = data.sort_values(by='交易时间')              # 按照交易时间排序
     data = data.ix[(data['交易时间'] > start) & (data['交易时间'] < end)]  # 筛选出满足时间要求的记录
-    print_data_info(data_zfb, '合并后账单')
+    print_data_info(data, '合并后账单')
+
+    print('\n{}至{}期间数据统计：'.format(start, end))
+    data_analysis(data)
 
     data.to_excel(save_path, encoding='gbk')
-#
+
 #
 # def post_process(data):
 #     """
@@ -99,6 +109,11 @@ def merge(path_wx, path_zfb, rules_list, save_path, start='2020/6/1 0:0:0', end=
 #     :return:
 #     """
 #     return data
+
+
+def data_analysis(data):
+    print('总收入：{}元。'.format(sum(data.ix[data['收支'] == '收入', ['交易金额']].values)[0]))
+    print('总支出：{}元。'.format(sum(data.ix[data['收支'] == '支出', ['交易金额']].values)[0]))
 
 
 if __name__ == "__main__":

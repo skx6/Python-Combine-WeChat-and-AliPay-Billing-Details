@@ -1,4 +1,4 @@
-# Python-
+# Python-Combine-WeChat-and-AliPay-Billing-Details
 
 This is a blog with usefull tools for merging WeChat and Ali Pay billing details. which is mainly for Chinese users, that is why it written in Chinese.
 
@@ -6,7 +6,7 @@ This is a blog with usefull tools for merging WeChat and Ali Pay billing details
 
 账单是我们生活中随处需要的一部分，在互联网中的账单往往分布在不同的公司，成为数据孤岛，给用户自身数据的整合造成不便。
 
-本文旨在解决微信和支付宝账单的问题。该项目是一个离线的工程，需要用户自行下载微信账单和支付宝账单的csv文件，使用前记得修改主程序combine_wx_zfb.py中的三个路径参数：
+本文旨在解决微信和支付宝账单的问题。该项目是一个离线的工程，需要用户自行下载微信账单和支付宝账单的csv文件，可以参考[下载微信账单](https://jingyan.baidu.com/article/02027811da873c5bcc9ce5e5.html)和[下载支付宝账单](https://jingyan.baidu.com/article/3aed632e4686a73111809161.html)。使用前记得修改主程序combine_wx_zfb.py中的三个路径参数：
 
 path_wx：微信账单路径，
 path_zfb：支付宝账单路径，

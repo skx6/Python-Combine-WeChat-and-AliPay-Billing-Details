@@ -112,8 +112,8 @@ def merge(path_wx, path_zfb, rules_list, save_path, start='2020/6/1 0:0:0', end=
 
 
 def data_analysis(data):
-    print('总收入：{}元。'.format(sum(data.ix[data['收支'] == '收入', ['交易金额']].values)[0]))
-    print('总支出：{}元。'.format(sum(data.ix[data['收支'] == '支出', ['交易金额']].values)[0]))
+    print('总收入：{:.2f}元。'.format(sum(data.ix[data['收支'] == '收入', ['交易金额']].values)[0]))
+    print('总支出：{:.2f}元。'.format(sum(data.ix[data['收支'] == '支出', ['交易金额']].values)[0]))
 
 
 if __name__ == "__main__":

@@ -20,5 +20,7 @@ rules_list是合并规则，正常情况下不用动了，除了你有特殊的�
 
 ![一些结果图](https://github.com/SongKaixiang/Python-Combine-WeChat-and-AliPay-Billing-Details/blob/master/merge/bill.jpg)
 
+注意：保存的csv文件可以用txt查看器打开，也可以用excel打开，但是由于csv是utf-8编码，可能有乱码现象，参考[excel打开csv乱码](https://blog.csdn.net/qhsy2016/article/details/80563489)。
+
 有一些注意事项在脚本开头，读者可以自行查看。
 
